@@ -21,6 +21,7 @@ body{font-family:var(--font-body);background:var(--bg-deep);color:var(--cream);-
 .section-pad{padding:100px 0;}
 .deco-line{width:80px;height:1.5px;margin:0 auto 40px;background:linear-gradient(90deg,transparent,var(--lilac-soft),transparent);}
 
+[id]{scroll-margin-top:80px;}
 h1,h2,h3{font-family:var(--font-display);font-weight:400;}
 .section-label{font-family:var(--font-body);font-size:11px;font-weight:600;letter-spacing:4px;text-transform:uppercase;color:var(--lilac);text-align:center;margin-bottom:16px;}
 .section-title{font-family:var(--font-display);font-size:clamp(36px,5vw,56px);font-weight:300;font-style:italic;color:var(--white);text-align:center;line-height:1.2;margin-bottom:24px;}
@@ -34,12 +35,14 @@ h1,h2,h3{font-family:var(--font-display);font-weight:400;}
 .nav-links{display:flex;gap:32px;}
 .nav-links a{font-size:12px;font-weight:400;letter-spacing:2px;text-transform:uppercase;color:rgba(220,200,240,0.6);text-decoration:none;transition:color .3s;}
 .nav-links a:hover{color:var(--white);}
+.nav-hamburger{display:none;background:none;border:none;cursor:pointer;padding:8px;}
+.nav-hamburger svg{width:24px;height:24px;stroke:var(--cream);stroke-width:1.5;fill:none;}
 
 /* ═══ HERO ═══ */
 .hero{position:relative;min-height:100vh;min-height:100dvh;display:flex;align-items:center;justify-content:center;overflow:hidden;}
 .hero-bg{position:absolute;inset:0;background:url('../images/hero-festival-background.webp') center/cover no-repeat;}
-.hero-overlay{position:absolute;inset:0;background:linear-gradient(170deg,rgba(10,3,18,0.30) 0%,rgba(26,8,37,0.50) 50%,rgba(10,3,18,0.75) 100%);}
-.hero-vignette{position:absolute;inset:0;background:radial-gradient(ellipse at center,transparent 30%,rgba(4,1,8,0.50) 100%);}
+.hero-overlay{position:absolute;inset:0;pointer-events:none;background:linear-gradient(170deg,rgba(10,3,18,0.30) 0%,rgba(26,8,37,0.50) 50%,rgba(10,3,18,0.75) 100%);}
+.hero-vignette{position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse at center,transparent 30%,rgba(4,1,8,0.50) 100%);}
 .hero-grain{position:absolute;inset:0;pointer-events:none;opacity:0.04;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");background-size:256px;}
 .hero-content{position:relative;z-index:5;text-align:center;padding:40px 24px;animation:heroFadeIn 1.8s ease-out;}
 @keyframes heroFadeIn{0%{opacity:0;transform:translateY(30px);}100%{opacity:1;transform:translateY(0);}}
@@ -145,7 +148,9 @@ footer .footer-logo{width:140px;height:auto;margin-bottom:20px;opacity:0.3;filte
   .venues-grid{justify-content:center;max-width:400px;margin-left:auto;margin-right:auto;}
   .venue-card{flex:0 1 100%;}
   .quienes-content{grid-template-columns:1fr;gap:40px;}
-  .nav-links{display:none;}
+  .nav-hamburger{display:block;}
+  .nav-links{display:none;position:absolute;top:100%;left:0;right:0;background:rgba(10,3,18,0.95);backdrop-filter:blur(20px);padding:24px 20px;flex-direction:column;gap:20px;text-align:center;border-bottom:1px solid rgba(200,150,220,0.1);}
+  .nav-links.open{display:flex;}
   .section-pad{padding:70px 0;}
   .sponsors-grid{gap:20px;}
   .sponsor-logo-wrap{width:130px;height:65px;}
