@@ -1,5 +1,8 @@
 # Cloudflare Pages redirects
 # https://developers.cloudflare.com/pages/configuration/redirects/
-
-# Enforce non-www
-https://www.mujeresmusicascontemporaneas.com/* https://mujeresmusicascontemporaneas.com/:splat 301
+#
+# www → non-www is handled by setting the apex domain as "Primary"
+# in Cloudflare Pages > Custom domains. No rule needed here.
+#
+# Add relative-path redirects below if needed, e.g.:
+# /old-page /new-page 301
