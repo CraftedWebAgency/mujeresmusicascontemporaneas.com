@@ -1,3 +1,4 @@
+console.log('[MMC] main.js loaded',new Date().toISOString());
 const nav=document.getElementById('nav');
 const hamburger=document.querySelector('.nav-hamburger');
 const navLinks=document.querySelector('.nav-links');
