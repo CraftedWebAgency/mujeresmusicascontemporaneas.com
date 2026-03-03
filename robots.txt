@@ -1,0 +1,6 @@
+# robots.txt — Festival MMC 2026
+
+User-agent: *
+Allow: /
+
+Sitemap: https://mujeresmusicascontemporaneas.com/sitemap.xml
