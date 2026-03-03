@@ -22,6 +22,7 @@ body{font-family:var(--font-body);background:var(--bg-deep);color:var(--cream);-
 .deco-line{width:80px;height:1.5px;margin:0 auto 40px;background:linear-gradient(90deg,transparent,var(--lilac-soft),transparent);}
 
 [id]{scroll-margin-top:80px;}
+a:focus-visible,button:focus-visible{outline:2px solid var(--lilac);outline-offset:2px;border-radius:8px;}
 h1,h2,h3{font-family:var(--font-display);font-weight:400;}
 .section-label{font-family:var(--font-body);font-size:11px;font-weight:600;letter-spacing:4px;text-transform:uppercase;color:var(--lilac);text-align:center;margin-bottom:16px;}
 .section-title{font-family:var(--font-display);font-size:clamp(36px,5vw,56px);font-weight:300;font-style:italic;color:var(--white);text-align:center;line-height:1.2;margin-bottom:24px;}
@@ -64,8 +65,8 @@ h1,h2,h3{font-family:var(--font-display);font-weight:400;}
 
 /* ═══ PROGRAMA ═══ */
 .programa{background:linear-gradient(180deg,var(--bg-deep),var(--bg-purple),var(--bg-deep));}
-.concert-card{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start;margin-bottom:100px;opacity:0;transform:translateY(40px);transition:all .8s ease-out;}
-.concert-card.visible{opacity:1;transform:translateY(0);}
+.concert-card{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start;margin-bottom:100px;}
+@media(prefers-reduced-motion:no-preference){.concert-card{opacity:0;transform:translateY(40px);transition:all .8s ease-out;}.concert-card.visible{opacity:1;transform:translateY(0);}}
 .concert-card:nth-child(even){direction:rtl;}
 .concert-card:nth-child(even) > *{direction:ltr;}
 .concert-img-wrap{position:relative;border-radius:16px;overflow:hidden;aspect-ratio:4/5;box-shadow:0 20px 60px rgba(0,0,0,0.35),0 8px 20px rgba(0,0,0,0.15),0 0 0 1px rgba(180,130,200,0.08);}
@@ -110,7 +111,7 @@ h1,h2,h3{font-family:var(--font-display);font-weight:400;}
 .venue-card{flex:0 1 calc(33.333% - 16px);min-width:260px;}
 .venue-card{background:var(--glass-bg);backdrop-filter:blur(16px);border:1px solid var(--glass-border);border-radius:16px;padding:36px 28px;text-align:center;transition:all .4s ease;}
 .venue-card:hover{border-color:rgba(200,150,220,0.25);box-shadow:0 12px 40px rgba(80,30,120,0.15);transform:translateY(-4px);}
-.venue-icon{width:48px;height:48px;margin:0 auto 20px;stroke:var(--lilac);stroke-width:1;fill:none;}
+.venue-building-icon{width:36px;height:36px;margin:0 auto 16px;stroke:var(--lilac);stroke-width:1.5;fill:none;opacity:0.85;}
 .venue-name{font-family:var(--font-display);font-size:24px;font-weight:400;color:var(--white);margin-bottom:14px;}
 .venue-desc{font-size:14px;font-weight:300;color:rgba(220,210,235,0.60);line-height:1.7;}
 .venue-links{margin-top:18px;display:grid;gap:12px;text-align:left;}
@@ -165,8 +166,8 @@ footer .footer-logo{width:140px;height:auto;margin-bottom:20px;opacity:0.3;filte
   .concert-card:nth-child(even){direction:ltr;}
   .concert-info{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);border-radius:16px;padding:24px 20px;}
   .desc-toggle{display:inline-block;}
-  .venues-grid{justify-content:center;max-width:400px;margin-left:auto;margin-right:auto;}
-  .venue-card{flex:0 1 100%;}
+  .venues-grid{justify-content:center;}
+  .venue-card{flex:0 1 100%;max-width:500px;}
   .quienes-content{grid-template-columns:1fr;gap:40px;}
   .quienes-text p{font-size:15px;line-height:1.8;}
   .nav-hamburger{display:block;}
