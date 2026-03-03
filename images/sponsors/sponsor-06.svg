@@ -5,14 +5,14 @@
 <defs>
   <linearGradient id="swooshGrad" gradientUnits="userSpaceOnUse"
     x1="2600" y1="6500" x2="5500" y2="8500">
-    <stop offset="0%" stop-color="#5a8a30"/>
-    <stop offset="30%" stop-color="#76a53a"/>
-    <stop offset="60%" stop-color="#8db843"/>
-    <stop offset="100%" stop-color="#a6c64c"/>
+    <stop offset="0%" stop-color="#ffffff"/>
+    <stop offset="30%" stop-color="#ffffff"/>
+    <stop offset="60%" stop-color="#ffffff"/>
+    <stop offset="100%" stop-color="#ffffff"/>
   </linearGradient>
 </defs>
 <!-- Dark green M letterform + MEXPATH text -->
-<g transform="translate(0,1536) scale(0.1,-0.1)" fill="#25511a" stroke="none">
+<g transform="translate(0,1536) scale(0.1,-0.1)" fill="#ffffff" stroke="none">
   <path d="M6746 10304 c-95 -17 -219 -74 -301 -138 -89 -69 -152 -145 -440
 -531 -144 -192 -290 -384 -324 -425 -98 -117 -272 -300 -285 -300 -6 0 -52 55
 -101 123 -218 301 -351 470 -415 530 l-69 65 -83 41 c-104 52 -193 71 -334 71

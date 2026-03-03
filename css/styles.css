@@ -119,16 +119,16 @@ h1,h2,h3{font-family:var(--font-display);font-weight:400;}
 .mission-text{font-family:var(--font-display);font-size:24px;font-weight:300;font-style:italic;color:var(--cream);line-height:1.6;}
 
 /* ═══ PATROCINADORES ═══ */
-.sponsors-section{background:var(--bg-purple);}
-.sponsor-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:18px;margin-top:56px;}
-.sponsor-tile{height:90px;padding:14px;border:1px solid rgba(200,150,220,0.08);border-radius:16px;display:flex;align-items:center;justify-content:center;position:relative;background:var(--glass-bg);backdrop-filter:blur(12px);transition:all .3s ease;}
-.sponsor-tile:hover{border-color:rgba(200,150,220,0.25);transform:translateY(-2px);}
-.sponsor-tile img{max-width:100%;max-height:100%;object-fit:contain;filter:brightness(0) invert(1);opacity:0.85;transition:opacity .3s;}
+.sponsors-section{background:linear-gradient(180deg,var(--bg-purple),#1e0c2e,var(--bg-purple));}
+.sponsor-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:20px;margin-top:56px;}
+.sponsor-tile{height:100px;padding:18px 20px;border:1px solid rgba(200,150,220,0.10);border-radius:16px;display:flex;align-items:center;justify-content:center;position:relative;background:rgba(30,12,46,0.60);backdrop-filter:blur(12px);transition:all .3s ease;}
+.sponsor-tile:hover{border-color:rgba(200,150,220,0.25);transform:translateY(-2px);background:rgba(40,18,60,0.70);}
+.sponsor-tile img{max-width:100%;max-height:100%;object-fit:contain;opacity:0.88;transition:opacity .3s;}
 .sponsor-tile:hover img{opacity:1;}
-.sponsor-tile.no-invert{background:rgba(255,255,255,0.88);}
-.sponsor-tile.no-invert:hover{background:rgba(255,255,255,0.95);}
-.sponsor-tile.no-invert img{filter:none;}
-.sponsor-num{position:absolute;top:8px;left:10px;font-size:11px;font-weight:500;letter-spacing:1px;color:var(--lilac);opacity:0.5;}
+.sponsor-tile.light-tile{background:rgba(255,255,255,0.90);}
+.sponsor-tile.light-tile:hover{background:rgba(255,255,255,0.96);}
+.sponsor-tile.light-tile .sponsor-num{color:var(--purple-mid);}
+.sponsor-num{position:absolute;top:8px;left:10px;font-size:11px;font-weight:500;letter-spacing:1px;color:var(--lilac);opacity:0.45;}
 .sponsor-cta{text-align:center;margin-top:48px;font-size:15px;font-weight:300;color:rgba(220,210,235,0.55);}
 .sponsor-cta a{color:var(--lilac);text-decoration:none;border-bottom:1px solid rgba(200,146,224,0.3);transition:border-color .3s;}
 .sponsor-cta a:hover{border-color:var(--lilac);}
@@ -161,6 +161,6 @@ footer .footer-logo{width:140px;height:auto;margin-bottom:20px;opacity:0.3;filte
 @media(max-width:600px){
   .container{padding:0 20px;}
   .hero-logo{width:min(300px,80vw);}
-  .sponsor-grid{grid-template-columns:repeat(2,1fr);gap:12px;}
-  .sponsor-tile{height:75px;padding:10px;}
+  .sponsor-grid{grid-template-columns:repeat(2,1fr);gap:14px;}
+  .sponsor-tile{height:80px;padding:14px;}
 }
