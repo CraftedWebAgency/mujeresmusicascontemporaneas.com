@@ -111,18 +111,18 @@ h1,h2,h3{font-family:var(--font-display);font-weight:400;}
 .venue-card{flex:0 1 calc(33.333% - 16px);min-width:260px;}
 .venue-card{background:var(--glass-bg);backdrop-filter:blur(16px);border:1px solid var(--glass-border);border-radius:16px;padding:36px 28px;text-align:center;transition:all .4s ease;}
 .venue-card:hover{border-color:rgba(200,150,220,0.25);box-shadow:0 12px 40px rgba(80,30,120,0.15);transform:translateY(-4px);}
-.venue-building-icon{width:36px;height:36px;margin:0 auto 16px;stroke:var(--lilac);stroke-width:1.5;fill:none;opacity:0.85;}
+.venue-building-icon{width:40px;height:40px;margin:0 auto 16px;stroke:var(--lilac);stroke-width:1.8;fill:none;opacity:0.85;}
 .venue-name{font-family:var(--font-display);font-size:24px;font-weight:400;color:var(--white);margin-bottom:14px;}
 .venue-desc{font-size:14px;font-weight:300;color:rgba(220,210,235,0.60);line-height:1.7;}
 .venue-links{margin-top:18px;display:grid;gap:12px;text-align:left;}
 .venue-address{display:flex;gap:10px;align-items:flex-start;}
-.venue-address svg{width:18px;height:18px;flex-shrink:0;margin-top:2px;stroke:var(--lilac);stroke-width:1.5;fill:none;opacity:0.8;}
+.venue-address svg{width:18px;height:18px;flex-shrink:0;margin-top:2px;stroke:var(--lilac);stroke-width:1.8;fill:none;opacity:0.8;}
 .venue-label{font-size:11px;font-weight:500;letter-spacing:0.08em;text-transform:uppercase;color:rgba(220,210,235,0.55);}
 .venue-addr-text{font-size:14px;font-weight:300;line-height:1.55;color:rgba(240,235,250,0.88);}
-.venue-map-btn{display:flex;align-items:center;justify-content:center;gap:8px;min-height:44px;padding:12px 14px;border-radius:999px;text-decoration:none;border:1px solid rgba(255,255,255,0.12);background:rgba(255,255,255,0.06);color:rgba(255,255,255,0.92);font-family:var(--font-body);font-size:13px;font-weight:400;letter-spacing:0.5px;transition:all .3s ease;cursor:pointer;}
-.venue-map-btn:hover{background:rgba(255,255,255,0.10);border-color:rgba(200,150,220,0.25);}
-.venue-map-btn:active{transform:translateY(1px);}
-.venue-map-btn svg{width:16px;height:16px;flex-shrink:0;stroke:var(--lilac);stroke-width:1.5;fill:none;}
+a.venue-map-btn,a.venue-map-btn:visited{display:flex;align-items:center;justify-content:center;gap:8px;min-height:44px;padding:12px 14px;border-radius:999px;text-decoration:none;border:1px solid rgba(255,255,255,0.14);background:rgba(255,255,255,0.08);color:rgba(255,255,255,0.92);font-family:var(--font-body);font-size:13px;font-weight:400;letter-spacing:0.5px;transition:all .3s ease;cursor:pointer;}
+a.venue-map-btn:hover{background:rgba(255,255,255,0.13);border-color:rgba(200,150,220,0.25);}
+a.venue-map-btn:active{transform:translateY(1px);}
+a.venue-map-btn svg{width:16px;height:16px;flex-shrink:0;stroke:var(--lilac);stroke-width:1.8;fill:none;}
 
 /* ═══ NOSOTRAS ═══ */
 .quienes{background:linear-gradient(180deg,var(--bg-deep),var(--bg-purple));position:relative;}
