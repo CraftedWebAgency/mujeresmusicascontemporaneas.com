@@ -112,9 +112,9 @@ h1,h2,h3{font-family:var(--font-display);font-weight:400;}
 /* ═══ NOSOTRAS ═══ */
 .quienes{background:linear-gradient(180deg,var(--bg-deep),var(--bg-purple));position:relative;}
 .quienes-content{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;}
-.quienes-text p{font-size:16px;font-weight:300;color:rgba(220,210,235,0.75);line-height:1.8;margin-bottom:20px;}
+.quienes-text p{font-size:16px;font-weight:300;color:rgba(230,220,245,0.85);line-height:1.75;margin-bottom:20px;max-width:660px;}
 .quienes-text em{color:var(--pink-accent);font-style:normal;}
-.mission-card{background:var(--glass-bg);backdrop-filter:blur(16px);border:1px solid var(--glass-border);border-radius:16px;padding:48px 40px;text-align:center;}
+.mission-card{background:rgba(42,16,60,0.45);backdrop-filter:blur(16px);border:1px solid var(--glass-border);border-radius:16px;padding:48px 40px;text-align:center;}
 .mission-label{font-size:11px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:var(--lilac);margin-bottom:20px;}
 .mission-text{font-family:var(--font-display);font-size:24px;font-weight:300;font-style:italic;color:var(--cream);line-height:1.6;}
 
@@ -152,6 +152,7 @@ footer .footer-logo{width:140px;height:auto;margin-bottom:20px;opacity:0.3;filte
   .venues-grid{justify-content:center;max-width:400px;margin-left:auto;margin-right:auto;}
   .venue-card{flex:0 1 100%;}
   .quienes-content{grid-template-columns:1fr;gap:40px;}
+  .quienes-text p{font-size:15px;line-height:1.8;}
   .nav-hamburger{display:block;}
   .nav-links{display:none;position:absolute;top:100%;left:0;right:0;background:rgba(10,3,18,0.95);backdrop-filter:blur(20px);padding:24px 20px;flex-direction:column;gap:20px;text-align:center;border-bottom:1px solid rgba(200,150,220,0.1);}
   .nav-links.open{display:flex;}
@@ -161,6 +162,8 @@ footer .footer-logo{width:140px;height:auto;margin-bottom:20px;opacity:0.3;filte
 @media(max-width:600px){
   .container{padding:0 20px;}
   .hero-logo{width:min(300px,80vw);}
+  .mission-card{padding:36px 24px;}
+  .mission-text{font-size:20px;}
   .sponsor-grid{grid-template-columns:repeat(2,1fr);gap:14px;}
   .sponsor-tile{height:80px;padding:14px;}
 }
