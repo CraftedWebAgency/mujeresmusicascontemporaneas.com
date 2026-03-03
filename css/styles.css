@@ -96,6 +96,8 @@ h1,h2,h3{font-family:var(--font-display);font-weight:400;}
 .programa-general-link{display:block;border-radius:16px;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,0.35),0 0 0 1px rgba(180,130,200,0.08);transition:transform .4s ease,box-shadow .4s ease;}
 .programa-general-link:hover{transform:translateY(-6px);box-shadow:0 28px 70px rgba(0,0,0,0.45),0 0 0 1px rgba(200,146,224,0.20);}
 .programa-general-link img{width:100%;height:auto;display:block;}
+.programa-general-cta{display:inline-block;margin-top:24px;padding:14px 40px;font-family:var(--font-body);font-size:13px;font-weight:500;letter-spacing:2px;text-transform:uppercase;color:var(--white);background:linear-gradient(135deg,rgba(74,26,107,0.6),rgba(45,16,64,0.6));backdrop-filter:blur(12px);border:1px solid rgba(200,146,224,0.25);border-radius:60px;text-decoration:none;transition:all .4s ease;cursor:pointer;}
+.programa-general-cta:hover{background:linear-gradient(135deg,rgba(90,35,130,0.7),rgba(60,22,85,0.7));border-color:rgba(200,146,224,0.45);box-shadow:0 8px 40px rgba(120,50,170,0.20);transform:translateY(-2px);}
 
 /* ═══ SEDES ═══ */
 .sedes{background:var(--bg-deep);}
