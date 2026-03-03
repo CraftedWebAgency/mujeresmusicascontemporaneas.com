@@ -140,10 +140,8 @@ h1,h2,h3{font-family:var(--font-display);font-weight:400;}
 .sponsor-tile:hover{border-color:rgba(200,150,220,0.25);transform:translateY(-2px);background:rgba(40,18,60,0.70);}
 .sponsor-tile img{max-width:100%;max-height:100%;object-fit:contain;opacity:0.88;transition:opacity .3s;}
 .sponsor-tile:hover img{opacity:1;}
-.sponsor-tile.light-tile{background:rgba(255,255,255,0.90);}
-.sponsor-tile.light-tile:hover{background:rgba(255,255,255,0.96);}
-.sponsor-tile.light-tile .sponsor-num{color:var(--purple-mid);}
-.sponsor-num{position:absolute;top:8px;left:10px;font-size:11px;font-weight:500;letter-spacing:1px;color:var(--lilac);opacity:0.45;}
+.sponsor-tile.light-tile{background:rgba(255,255,255,0.92);}
+.sponsor-tile.light-tile:hover{background:rgba(255,255,255,0.97);}
 .sponsor-cta{text-align:center;margin-top:48px;font-size:15px;font-weight:300;color:rgba(220,210,235,0.55);}
 .sponsor-cta a{color:var(--lilac);text-decoration:none;border-bottom:1px solid rgba(200,146,224,0.3);transition:border-color .3s;}
 .sponsor-cta a:hover{border-color:var(--lilac);}
